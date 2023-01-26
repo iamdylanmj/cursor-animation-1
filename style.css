@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(40, 37, 37);
+    height: 100vh;
+
+}
+
+div {
+    width: var(--widthVal);
+    height: var(--heightVal);
+    background-color: deeppink;
+    border-radius: 50%;
+    position: absolute;
+    top: var(--yVal);
+    left: var(--xVal);
+    transform: translate(-50%, -50%);
+    animation-name: anim;
+    animation-duration: 5s;
+}
+
+@keyframes anim {
+    0% {
+    transform: translate(-50%, -50%);
+    filter: hue-rotate(0deg);
+
+    }
+
+    100% {
+    transform: translate(-50%, -5000%);
+    filter: hue-rotate(750deg);
+
+    }
+}
